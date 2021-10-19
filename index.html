@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+</head>
+<body>
+    <div class="BT1 border border-success text-success my-3 mx-5">
+        <div class="container py-3">
+            <h2 style="text-align: center;">
+                Tìm số chẵn lẻ nhỏ hơn 100
+            </h2>
+            <form>
+                <br>
+                <button type="button" id="btnSequenceFor" class="btn btn-info">Xem kết quả (dùng for)</button>
+                <button type="button" id="btnSequenceWhile" class="btn btn-info">Xem kết quả (dùng While)</button>
+                <br>
+                <i class="fa fa-hand-point-right text-danger pt-4" style="font-size: 25px;"></i>
+                <span class="my-3 text-danger" id="txtSequence" style="font-size: 20px;"></span>
+            </form>
+        </div>
+    </div>
+    <div class="BT2 border border-success text-success my-3 mx-5">
+        <div class="container py-3">
+            <h2 style="text-align: center;">
+                Đếm số chia hết cho 3
+            </h2>
+            <form>
+                <br>
+                <button type="button" id="btnDivisibleFor" class="btn btn-info">Xem kết quả (dùng for)</button>
+                <button type="button" id="btnDivisibleWhile" class="btn btn-info">Xem kết quả (dùng While)</button>
+                <br>
+                <i class="fa fa-hand-point-right text-danger pt-4" style="font-size: 25px;"></i>
+                <span class="my-3 text-danger" id="txtDivisible" style="font-size: 20px;"></span>
+            </form>
+        </div>
+    </div>
+    <div class="BT3 border border-success text-success my-3 mx-5">
+        <div class="container py-3">
+            <h2 style="text-align: center;">
+                Tìm số nguyên dương nhỏ nhất
+            </h2>
+            <form>
+                <br>
+                <button type="button" id="btnSmallest" class="btn btn-info">Xem kết quả</button>
+                <br>
+                <i class="fa fa-hand-point-right text-danger pt-4" style="font-size: 25px;"></i>
+                <span class="my-3 text-danger" id="txtSmallest" style="font-size: 20px;"></span>
+            </form>
+        </div>
+    </div>
+    <div class="BT4 border border-success text-success my-3 mx-5">
+        <div class="container py-3">
+            <h2 style="text-align: center;">
+                Tính tổng
+            </h2>
+            <form>
+                <div class="form-group">
+                    <input type="number" class="form-control" id="numberX" placeholder="Nhập số x">
+                </div>
+                <div class="form-group">
+                    <input type="number" class="form-control" id="numberN" placeholder="Nhập số n">
+                </div>
+                <button type="button" id="btnPow" class="btn btn-info">Tính tổng</button>
+                <br>
+                <i class="fa fa-hand-point-right text-danger pt-4" style="font-size: 25px;"></i>
+                <span class="my-3 text-danger" id="txtPow" style="font-size: 20px;"></span>
+            </form>
+        </div>
+    </div>
+    <div class="BT5 border border-success text-success my-3 mx-5">
+        <div class="container py-3">
+            <h2 style="text-align: center;">
+                Tính giai thừa
+            </h2>
+            <form>
+                <div class="form-group">
+                    <input type="number" class="form-control" id="factorialN" placeholder="Nhập số n">
+                </div>
+                <button type="button" id="btnFactorial" class="btn btn-info">Tính</button>
+                <br>
+                <i class="fa fa-hand-point-right text-danger pt-4" style="font-size: 25px;"></i>
+                <span class="my-3 text-danger" id="txtFactorial" style="font-size: 20px;"></span>
+            </form>
+        </div>
+    </div>
+    <div class="BT1 border border-success text-success my-3 mx-5">
+        <div class="container py-3">
+            <h2 style="text-align: center;">
+                Tạo thẻ div
+            </h2>
+            <form>
+                <br>
+                <button type="button" id="btnDiv" class="btn btn-info">Tạo thẻ</button>
+                <br>
+                <i class="fa fa-hand-point-right text-danger pt-4" style="font-size: 25px;"></i>
+                <span class="my-3 text-danger" id="txtDiv" style="font-size: 20px;"></span>
+            </form>
+        </div>
+    </div>
+    <div class="BT7 border border-success text-success my-3 mx-5">
+        <div class="container py-3">
+            <h2 style="text-align: center;">
+                In số nguyên tố
+            </h2>
+            <form>
+                <div class="form-group">
+                    <input type="number" class="form-control" id="primeN" placeholder="Nhập số n">
+                </div>
+
+                <button type="button" id="btnPrime" class="btn btn-info">Tính</button>
+                <br>
+                <i class="fa fa-hand-point-right text-danger pt-4" style="font-size: 25px;"></i>
+                <span class="my-3 text-danger" id="txtPrime" style="font-size: 20px;"></span>
+            </form>
+        </div>
+    </div>
+    <script src="./js/main.js"></script>
+    <script src="./js/main2.js"></script>
+    <script src="./js/main3.js"></script>
+    <script src="./js/main4.js"></script>
+    <script src="./js/main5.js"></script>
+    <script src="./js/main6.js"></script>
+    <script src="./js/main7.js"></script>
+    <!-- BOOTSTRAP -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+</body>
+</html>
